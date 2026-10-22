@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+          padding: 5px;
+          border: 1px solid lightgray;
+          border-radius: 8px;
+          outline: none !important;
+        }
+        input:focus { border-color: orange;}
+        inbut:user-invalid{border-color: red;}
+        inbut:user-valid{border-color: green;}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Liên hệ sau</legend>
+        <label for="email">Email</label>
+        <input type="email" required placeholder="Nhập email">
+        <button type="submit">Gửi</button>
+    </fieldset>
+</body>
+</html>

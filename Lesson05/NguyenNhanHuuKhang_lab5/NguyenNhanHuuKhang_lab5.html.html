@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover, Focus, Transition</title>
+  <style>
+    /*yc 1 */
+    /* MENU */
+    .menu a {
+      display: inline-block;
+      padding: 10px 16px;
+      color: white;
+      background: teal;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .menu a:hover,
+    .menu a:focus {
+      background: darkslategray;
+    }
+
+    /* CARD */
+    .card {
+      width: 250px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 2px solid lightgray;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* BUTTON */
+    button {
+      padding: 10px 20px;
+      color: white;
+      background: teal;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+    button:hover,
+    button:focus {
+      background: darkslategray;
+      transform: scale(1.1);
+    }
+    /* yc 2 */
+        input {
+      display: block;
+      width: 250px;
+      padding: 8px;
+      margin: 8px 0 16px;
+      border: 2px solid gray;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    /* FOCUS: khi click vào ô nhập */
+    input:focus {
+      outline: none;
+      border-color: royalblue;
+      background: aliceblue;
+    }
+
+    /* VALID: nhập đúng */
+    input:valid {
+      border-color: green;
+    }
+
+    /* INVALID: nhập sai (chỉ hiện khi đã nhập chữ) */
+    input:invalid:not(:placeholder-shown) {
+      border-color: red;
+      background: mistyrose;
+    }
+
+    /* DISABLED: ô bị khóa */
+    input:disabled {
+      background: lightgray;
+      border-color: darkgray;
+      cursor: not-allowed;
+    }
+
+    button {
+      padding: 10px 20px;
+      color: white;
+      background: teal;
+      border: none;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: gray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+ <H1>5.4 Thêm hover/focus, transition cho menu, card và button</H1>
+  <!-- MENU -->
+  <div class="menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <h3>Tiêu đề card</h3>
+    <p>Rê chuột vào đây để xem hiệu ứng.</p>
+  </div>
+
+  <!-- BUTTON -->
+  <button>Nhấn vào đây</button>
+  
+<H1>5.5 Hoàn thiện form HTML5 với đầy đủ trạng thái giao diện (focus, valid, invalid, disabled)</H1>
+  <form>
+    <label>Họ tên (bắt buộc):</label>
+    <input type="text" placeholder="Nhập họ tên" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="abc@gmail.com" required>
+
+    <label>Mật khẩu (tối thiểu 6 ký tự):</label>
+    <input type="password" placeholder="Nhập mật khẩu" minlength="6" required>
+
+    <label>Mã sinh viên (bị khóa):</label>
+    <input type="text" value="SV001" disabled>
+
+    <button type="submit">Gửi</button>
+    <button type="button" disabled>Đã khóa</button>
+  </form>
+
+</body>
+</html>

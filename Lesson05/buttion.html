@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button {
+         padding: 5px 10px;
+         color: white;
+         background-color: blue;
+         border: none;
+         border-radius: 10px;
+         cursor: pointer;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:focus{
+            outline: 3px solid orange;
+            background-color: blue;
+        }
+        button:disabled {
+            cursor: not-allowed;
+            background-color: #f1f1f1;
+            color: grey;
+            outline: 1px solid grey;
+        }
+    </style>
+        
+</head>
+<body>
+    <button>Gửi yêu cầu </button>
+    <button disabled>Gửi yêu cầu </button>
+
+</body>
+</html>

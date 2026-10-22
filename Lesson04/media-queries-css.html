@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+          - Sử dụng media queries đặt css cho từng thiết bị khác nhau, mỗi thiết bị sẽ có phần css riêng. Responsive web sẽ dùng các thuộc tính liên quan đến chiều rộng device
+          - Các mốc ngăn cách chiều rộng giữa các thiết bị được gọi là break points: 
+             Mobile < 480px
+             Table < 1024px
+             Desktop > 1024px
+        */
+        
+        @media only screen and(min-width: 480px) and (max-width: 1024px) {
+            body {
+                background-color: green;
+            }
+          } 
+          @media only screen and(min-width: 480px) and (max-width: 1024px){
+            body {
+                background-color: blue;
+            }
+          } 
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

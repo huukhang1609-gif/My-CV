@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+       /*
+        Grid System Layout: Chia màn hình thành 12 cột,
+        Các thành phần trên trang web xác định chiều rộng bằng số cột thành phần đó chiếm.
+        Ví dụ:      50% => 6 cột
+                    40% => 4 cột
+                    25% => 3 cột
+       */
+       .row {
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .col-6 {
+        flex: 0 0 auto;
+        width: 49,6%;
+       }
+       .col-3 {
+        flex: 0 0 auto;
+        width: 24,8%;
+       }
+       .border {
+         border: 1px solid red;
+       }
+       .bg-grey {
+         background-color: #f1f1f1;
+       }
+    </style>
+</head>
+<body>
+    <header Class="row border bg-grey">
+        Đầu trang 100%
+    </header>
+    <main class="row">
+        <nav class="col-3 border bg-grey"></nav>
+        <section class="col-6 border bg-grey"></section>
+        <aside class="col-3 border bg-grey"></aside>
+    </main>
+    <footer class="row border bg-grey">Chân trang 100%</footer>
+</body>
+</html>

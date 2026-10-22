@@ -1,0 +1,33 @@
+/* Universal Selector */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* 2. Type: Selector: Chọn loại thẻ (số nhiều) */
+/* Chọn tất cả các thẻ p */
+p {
+  color: red;
+}
+/* 3. ID Selector: Chọn theo ID */
+#header{
+    background-color: greenyellow;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+/* 4. Class Selector */
+.circle {
+   background-color: pink;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+.list{
+   border: 3px solid black;
+   width: 250px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 10px;
+   padding: 20px 0px;
+}
